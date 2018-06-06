@@ -89,7 +89,7 @@ module Roo
         #       This works by coincidence because Format[0] is General.
         style = cell_xml['s'].to_i
         # format = styles.style_format(style)
-	format = styles.style_format(10000) # Adding a big number overrides it to General rather than a specific data type
+        format = styles.style_format(10000) # Adding a big number overrides it to General rather than a specific data type
         value_type = cell_value_type(cell_xml['t'], format)
         formula = nil
 
